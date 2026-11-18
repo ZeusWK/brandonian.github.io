@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.timeline-content .bullet {
+  display: list-item;      /* Required for the bullet to show up */
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  gap: 32px;               /* Space between each link */
+  padding: 20px 0;
+  background-color: #f4f4f4;
+}
+
+.navbar a {
+  text-decoration: none;   /* Removes the underline */
+  color: #222;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #0077cc;          /* Highlights the link when hovered */
+}
+
+.hero-banner {
+  /* The linear-gradient adds a slight dark tint so white text is easy to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('powerplant.jpg');
+  background-size: cover;      /* Fills the entire banner without stretching */
+  background-position: center;
+  height: 250px;               /* Set how tall you want the banner to be */
+  
+  display: flex;
+  justify-content: center;     /* Centers horizontally */
+  align-items: center;         /* Centers vertically */
+  color: white;
+}
+
+.timeline {
+  max-width: 1200px;
+  margin: 40px auto; /* Centers the timeline block on the page */
+}
+
+.timeline-item {
+  display: flex;
+}
+
+.timeline-date {
+  width: 200px;
+  flex-shrink: 0; /* Prevents the date from shrinking on smaller screens */
+  text-align: right;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  font-weight: 600;
+  color: #555;
+  flex-shrink: 0; /* Keeps the date column from squishing on smaller screens */
+}
+
+.timeline-content {
+  position: relative;
+  border-left: 2px solid #333; /* Draws the vertical line */
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+/* Stops the vertical line cleanly at the final entry */
+.timeline-item:last-child .timeline-content {
+  padding-bottom: 0;
+}
+
+/* Adds a circular marker on the vertical line for each school */
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #555;
+}
+
+.inline-row {
+  display: flex;
+  align-items: center; /* Vertically centers the image and text with each other */
+  gap: 10px;           /* Space between the image and text */
+}
+
+.inline-row img {
+  height: 28px;
+  width: auto;
+}
+
+.inline-row h3 {
+  margin: 0;           /* Crucial: removes default heading margins that throw off centering */
+}
