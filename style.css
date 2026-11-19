@@ -116,3 +116,70 @@ body {
 .inline-row h3 {
   margin: 0;           /* Crucial: removes default heading margins that throw off centering */
 }
+
+.resume-download-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.resume-download-btn:hover {
+  background-color: #b25555;
+}
+
+.contact-container {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-header {
+  font-size: 16px;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.contact-email {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.contact-email a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.contact-email a:hover {
+  color: #b25555;
+}
+
+.linkedin-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0a66c2;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.linkedin-btn:hover {
+  background-color: #004182;
+}
